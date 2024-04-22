@@ -11,3 +11,5 @@ set relativenumber
 " syntax highlighting
 syntax on
 colorscheme desert 
+
+set virtualedit+=onemore
