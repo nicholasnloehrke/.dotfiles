@@ -8,3 +8,6 @@ set expandtab
 " show hybrid line numbers
 set number
 set relativenumber
+" syntax highlighting
+syntax on
+filetype on
