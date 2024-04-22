@@ -10,4 +10,4 @@ set number
 set relativenumber
 " syntax highlighting
 syntax on
-filetype on
+colorscheme desert 
