@@ -13,3 +13,4 @@ syntax on
 colorscheme desert 
 
 set virtualedit+=onemore
+set clipboard=unnamedplus
