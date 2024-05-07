@@ -115,3 +115,5 @@ fi
 
 # add a new line to prompt
 PS1+='\n\$ '
+
+export PATH=$PATH:/usr/bin/zig
