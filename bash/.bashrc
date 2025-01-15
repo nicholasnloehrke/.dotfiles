@@ -137,3 +137,7 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
     #  exec tmux
     exec tmux new-session -A -s main
 fi
+
+# *** DOCPROMPT ENV SETUP ***
+export PATH=$PATH:$PWD/tools/ant/bin/
+export ANT_ARGS='-find build.xml'
