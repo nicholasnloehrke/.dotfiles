@@ -11,10 +11,14 @@ call plug#begin()
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-sensible'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 call plug#end()
+
+" disable prompt to install language server
+let g:lsp_settings_enable_suggestions=0
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -41,4 +45,7 @@ set clipboard=unnamedplus
 
 " remove status bar (just press ^g if you wanna see the file name)
 set laststatus=0
+
+" ctrl + <arrow-key> fix
+set term=xterm
 
