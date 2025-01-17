@@ -109,7 +109,7 @@ n ()
     # The command builtin allows one to alias nnn to n, if desired, without
     # making an infinitely recursive alias
     # command nnn "$@"
-    command nnn -de "$@"
+    command nnn -deH "$@"
 
     [ ! -f "$NNN_TMPFILE" ] || {
         . "$NNN_TMPFILE"
@@ -138,3 +138,7 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
     exec tmux new-session -A -s main
 fi
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
