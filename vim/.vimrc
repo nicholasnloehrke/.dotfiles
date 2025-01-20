@@ -13,6 +13,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-sensible'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'editorconfig/editorconfig-vim'
+Plug 'preservim/nerdtree'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
