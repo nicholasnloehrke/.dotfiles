@@ -72,6 +72,7 @@ set_venv_prompt() {
 # Enable Git prompt features
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
 
 # Combine virtual environment and Git prompt in PROMPT_COMMAND
 PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\W" "\n\\\$ "'
