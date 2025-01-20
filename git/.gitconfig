@@ -4,4 +4,10 @@
 [pull]
 	ff = only
 [http]
-	proxy = 
+    proxy = 
+[color]
+    ui = true
+[core]
+    editor = vim
+    pager = less -+FX
+
