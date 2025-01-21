@@ -73,7 +73,7 @@ set_venv_prompt() {
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
-GIT_PS1_DESCRIBE_STYLE='contains' # options: contains | branch | describe | default
+GIT_PS1_DESCRIBE_STYLE='default' # options: contains | branch | describe | default
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUPSTREAM='auto'
 
