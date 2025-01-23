@@ -51,3 +51,5 @@ set laststatus=0
 " ctrl + <arrow-key> fix
 set term=xterm
 
+" *** KEYMAPS ***
+nmap <C-S-e> :NERDTreeToggle<CR>
