@@ -46,10 +46,13 @@ set virtualedit+=onemore
 set clipboard=unnamedplus
 
 " remove status bar (just press ^g if you wanna see the file name)
-set laststatus=0
+set laststatus=2
+set statusline=%F
+" hi StatusLine ctermbg=0 cterm=NONE
+hi StatusLine ctermbg=none cterm=bold
 
 " ctrl + <arrow-key> fix
 set term=xterm
 
 " *** KEYMAPS ***
-nmap <C-S-e> :NERDTreeToggle<CR>
+nmap <C-b> :NERDTreeToggle<CR>
