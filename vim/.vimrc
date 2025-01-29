@@ -63,3 +63,5 @@ nmap <C-b> :NERDTreeToggle<CR>
 nnoremap J <Nop>
 vnoremap J <Nop>
 
+" open with one click :)
+let g:NERDTreeMouseMode=3
