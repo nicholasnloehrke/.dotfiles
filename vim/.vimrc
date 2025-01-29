@@ -22,6 +22,9 @@ call plug#end()
 " disable prompt to install language server
 let g:lsp_settings_enable_suggestions=0
 
+" disable stupid annoying lsp popup
+let g:lsp_signature_help_enabled = 0
+
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
