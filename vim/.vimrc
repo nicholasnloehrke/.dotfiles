@@ -14,6 +14,7 @@ Plug 'tpope/vim-sensible'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdtree'
+Plug 'KabbAmine/yowish.vim'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
@@ -39,9 +40,8 @@ set expandtab
 set number
 set relativenumber
 
-" syntax highlighting
-syntax on
-colorscheme desert 
+" please the eyes
+colorscheme yowish
 
 " mouse and copy 
 set mouse=a
