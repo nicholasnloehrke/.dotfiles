@@ -59,3 +59,7 @@ set term=xterm
 
 " *** KEYMAPS ***
 nmap <C-b> :NERDTreeToggle<CR>
+" join lines is so f'ing annoying get rid of it
+nnoremap J <Nop>
+vnoremap J <Nop>
+
