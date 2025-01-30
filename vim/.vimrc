@@ -60,6 +60,9 @@ hi StatusLine ctermbg=none cterm=bold
 " ctrl + <arrow-key> fix
 set term=xterm
 
+" default to not read-only for vimdiff
+set noro
+
 " *** KEYMAPS ***
 nmap <C-b> :NERDTreeToggle<CR>
 " join lines is so f'ing annoying get rid of it
