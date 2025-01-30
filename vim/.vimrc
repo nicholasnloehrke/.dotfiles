@@ -15,6 +15,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdtree'
 Plug 'KabbAmine/yowish.vim'
+Plug 'tpope/vim-surround'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
@@ -42,6 +43,8 @@ set relativenumber
 
 " please the eyes
 colorscheme yowish
+autocmd ColorScheme * highlight LineNr ctermfg=darkgrey
+highlight LineNr ctermfg=darkgrey
 
 " mouse and copy 
 set mouse=a
