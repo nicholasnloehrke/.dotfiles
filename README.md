@@ -1,14 +1,14 @@
 Trial run:
 ```console
-~/.dotfiles $ stow -n bash git tmux vim
+~/.dotfiles $ stow -n .
 ```
 
 Install:
 ```console
-~/.dotfiles $ stow bash git tmux vim
+~/.dotfiles $ stow .
 ```
 
 Uninstall:
 ```console
-~/.dotfiles $ stow -D bash git tmux vim
+~/.dotfiles $ stow -D .
 ```
