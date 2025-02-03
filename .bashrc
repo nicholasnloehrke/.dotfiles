@@ -114,7 +114,7 @@ n ()
     # The command builtin allows one to alias nnn to n, if desired, without
     # making an infinitely recursive alias
     # command nnn "$@"
-    command nnn -deH "$@"
+    command nnn -deHA "$@"
 
     [ ! -f "$NNN_TMPFILE" ] || {
         . "$NNN_TMPFILE"
@@ -142,4 +142,6 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
     #  exec tmux
     exec tmux new-session -A -s main
 fi
+
+eval "$(fzf --bash)"
 

@@ -4,10 +4,11 @@
 [pull]
 	ff = only
 [http]
-    proxy = 
+	proxy = 
 [color]
-    ui = true
+	ui = true
 [core]
-    editor = vim
-    pager = less -+FX
-
+	editor = vim
+	pager = less -F
+[diff]
+	tool = vimdiff
