@@ -71,6 +71,7 @@ nmap <C-b> :NERDTreeToggle<CR>
 " join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
 vnoremap J <Nop>
+nnoremap gd :LspDefinition<CR>
 
 " open with one click :)
 let g:NERDTreeMouseMode=3
