@@ -16,6 +16,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdtree'
 Plug 'KabbAmine/yowish.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
@@ -53,7 +55,8 @@ set clipboard=unnamedplus
 
 " remove status bar (just press ^g if you wanna see the file name)
 set laststatus=2
-set statusline=%F
+set statusline=%F\ %{FugitiveStatusline()}
+
 " hi StatusLine ctermbg=0 cterm=NONE
 hi StatusLine ctermbg=none cterm=bold
 
@@ -71,3 +74,6 @@ vnoremap J <Nop>
 
 " open with one click :)
 let g:NERDTreeMouseMode=3
+
+" show me EVERYTHING
+let g:NERDTreeShowHidden=1
