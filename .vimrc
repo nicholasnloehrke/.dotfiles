@@ -68,7 +68,9 @@ set clipboard=unnamedplus
 
 " remove status bar (just press ^g if you wanna see the file name)
 set laststatus=2
-set statusline=%F\ %{FugitiveStatusline()}
+" set statusline=%F\ %{FugitiveStatusline()}
+" set statusline=%F\ %{FugitiveStatusline()}\ %l:%c
+set statusline=%F\ %{FugitiveStatusline()}%=%l:%c
 
 " hi StatusLine ctermbg=0 cterm=NONE
 hi StatusLine ctermbg=none cterm=bold
