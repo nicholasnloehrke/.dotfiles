@@ -89,6 +89,8 @@ nnoremap J <Nop>
 vnoremap J <Nop>
 nnoremap gd :LspDefinition<CR>
 nnoremap gr :LspReferences<CR>
+nnoremap gn :LspRename<CR>
+nnoremap ge :LspDocumentDiagnostics<CR>
 
 " open with one click :)
 let g:NERDTreeMouseMode=3
