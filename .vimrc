@@ -20,6 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -87,6 +88,7 @@ nmap <C-b> :NERDTreeToggle<CR>
 nnoremap J <Nop>
 vnoremap J <Nop>
 nnoremap gd :LspDefinition<CR>
+nnoremap gr :LspReferences<CR>
 
 " open with one click :)
 let g:NERDTreeMouseMode=3
