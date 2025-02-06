@@ -92,6 +92,7 @@ nnoremap gd :LspDefinition<CR>
 nnoremap gr :LspReferences<CR>
 nnoremap gn :LspRename<CR>
 nnoremap ge :LspDocumentDiagnostics<CR>
+nnoremap gh :LspHover<CR>
 
 " open with one click :)
 let g:NERDTreeMouseMode=3
