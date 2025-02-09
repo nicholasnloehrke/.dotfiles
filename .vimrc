@@ -31,6 +31,7 @@ let g:lsp_settings_enable_suggestions=0
 " disable stupid annoying lsp popup
 let g:lsp_signature_help_enabled = 0
 let g:asyncomplete_auto_popup = 0
+let g:lsp_diagnostics_virtual_text_enabled = 0
 
 function! s:check_back_space() abort
     let col = col('.') - 1
