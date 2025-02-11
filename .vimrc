@@ -49,6 +49,9 @@ filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
 
+" i like my markdown wrapped
+autocmd Filetype markdown set tw=80
+
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 
