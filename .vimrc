@@ -97,6 +97,11 @@ nnoremap gr :LspReferences<CR>
 nnoremap gn :LspRename<CR>
 nnoremap ge :LspDocumentDiagnostics<CR>
 nnoremap gh :LspHover<CR>
+" center searches
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
 
 " open with one click :)
 let g:NERDTreeMouseMode=3
