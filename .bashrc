@@ -78,8 +78,8 @@ GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUPSTREAM='auto'
 
 # Combine virtual environment and Git prompt in PROMPT_COMMAND
-# PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\W" "\n\\\$ "'
-PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\\\$ "'
+# PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\\\$ "'
+PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\e[33m→  \e[0m"'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
