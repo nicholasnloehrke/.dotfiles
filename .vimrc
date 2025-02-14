@@ -1,4 +1,7 @@
+"
 " install vim-plug
+"
+"
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
 	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -7,7 +10,10 @@ endif
 
 call plug#begin()
 
+"
 " plugins
+"
+"
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-sensible'
@@ -23,11 +29,13 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-" Plug 'KabbAmine/yowish.vim'
-" Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
+"
+" lsp
+"
+"
 " disable prompt to install language server
 let g:lsp_settings_enable_suggestions=0
 
@@ -47,51 +55,76 @@ inoremap <silent><expr> <TAB>
   \ asyncomplete#force_refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-
+"
+" not sure
+"
+"
 filetype plugin indent on
+
+"
 " show existing tab with 4 spaces width
+"
+"
 set tabstop=4
 
+"
 " i like my markdown wrapped
+"
+"
 autocmd Filetype markdown set tw=80
 
+"
 " when indenting with '>', use 4 spaces width
+"
+"
 set shiftwidth=4
 
+"
 " on pressing tab, insert 4 spaces
+"
+"
 set expandtab
 
-" show hybrid line numbers
+"
+" hybrid line numbers
+"
+"
 set number
 set relativenumber
 
+"
 " please the eyes
+"
+"
+if !has('gui_running') && &term =~ '^\%(screen\|tmux\)'
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
 set termguicolors
 colorscheme catppuccin_mocha
-" autocmd ColorScheme * highlight LineNr ctermfg=darkgrey
-" highlight LineNr ctermfg=darkgrey
 
+"
 " mouse and copy 
+"
+"
 set mouse=a
 set virtualedit+=onemore
 set clipboard=unnamedplus
 
-" remove status bar (just press ^g if you wanna see the file name)
 set laststatus=2
-" set statusline=%F\ %{FugitiveStatusline()}
-" set statusline=%F\ %{FugitiveStatusline()}\ %l:%c
 set statusline=%F\ %{FugitiveStatusline()}%=%l:%c
 
-" hi StatusLine ctermbg=0 cterm=NONE
-" hi StatusLine ctermbg=none cterm=bold
-
-" ctrl + <arrow-key> fix
-set term=xterm
-
+"
 " default to not read-only for vimdiff
+"
+"
 set noro
 
-" *** KEYMAPS ***
+"
+" keymaps
+"
+"
 nmap <C-b> :NERDTreeToggle<CR>
 " join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
