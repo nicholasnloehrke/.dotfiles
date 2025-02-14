@@ -14,7 +14,6 @@ Plug 'tpope/vim-sensible'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdtree'
-Plug 'KabbAmine/yowish.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
@@ -22,6 +21,10 @@ Plug 'tpope/vim-repeat'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+" Plug 'KabbAmine/yowish.vim'
+" Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -63,9 +66,10 @@ set number
 set relativenumber
 
 " please the eyes
-colorscheme yowish
-autocmd ColorScheme * highlight LineNr ctermfg=darkgrey
-highlight LineNr ctermfg=darkgrey
+set termguicolors
+colorscheme catppuccin_mocha
+" autocmd ColorScheme * highlight LineNr ctermfg=darkgrey
+" highlight LineNr ctermfg=darkgrey
 
 " mouse and copy 
 set mouse=a
@@ -79,7 +83,7 @@ set laststatus=2
 set statusline=%F\ %{FugitiveStatusline()}%=%l:%c
 
 " hi StatusLine ctermbg=0 cterm=NONE
-hi StatusLine ctermbg=none cterm=bold
+" hi StatusLine ctermbg=none cterm=bold
 
 " ctrl + <arrow-key> fix
 set term=xterm
