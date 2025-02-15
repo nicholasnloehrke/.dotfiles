@@ -5,10 +5,11 @@ TERM = "xterm-256color"
 bindings = [ { key = "F11", action = "ToggleFullScreen" } ]
 
 [font]
-normal = { family = "JetBrainsMonoNLNerdFont", style = "Regular" }
-bold = { family = "JetBrainsMonoNLNerdFont", style = "Bold" }
-italic = { family = "JetBrainsMonoNLNerdFont", style = "Italic" }
-bold_italic = { family = "JetBrainsMonoNLNerdFont", style = "BoldItalic" }
+size = 14
+normal = { family = "IosevkaNerdFontMono", style = "Regular" }
+bold = { family = "IosevkaNerdFontMono", style = "Bold" }
+italic = { family = "IosevkaNerdFontMono", style = "Italic" }
+bold_italic = { family = "IosevkaNerdFontMono", style = "Italic" } # BoldItalic doesnt work?
 
 [mouse]
 hide_when_typing = true
