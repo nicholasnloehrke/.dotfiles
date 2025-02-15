@@ -56,14 +56,14 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-YELLOW="\[\033[33m\]"
-RESET="\[\033[0m\]"
+COLOR_YELLOW="\[\033[33m\]"
+COLOR_RESET="\[\033[0m\]"
 
 # Function to dynamically set the virtual environment prompt
 set_venv_prompt() {
     if [[ -n $VIRTUAL_ENV ]]; then
         local venv_name=${VIRTUAL_ENV##*/}
-        VENVPROMPT="${YELLOW}${venv_name}${RESET} "
+        VENVPROMPT="${COLOR_YELLOW}${venv_name}${COLOR_RESET} "
     else
         VENVPROMPT=""
     fi
@@ -78,8 +78,7 @@ GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUPSTREAM='auto'
 
 # Combine virtual environment and Git prompt in PROMPT_COMMAND
-# PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\\\$ "'
-PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\e[33m→  \e[0m"'
+PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\[\033[33m\]→  \[\033[0m\]"'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
