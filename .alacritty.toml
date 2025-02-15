@@ -14,6 +14,12 @@ bold_italic = { family = "IosevkaNerdFontMono", style = "Italic" } # BoldItalic 
 [mouse]
 hide_when_typing = true
 
+[window]
+position = { x = 320, y = 120 }
+dimensions = { columns = 210, lines = 46 }
+decorations = "None"
+padding = { x = 5, y = 5 }
+
 #
 #
 # The following is for setting up Catppuccin color scheme
