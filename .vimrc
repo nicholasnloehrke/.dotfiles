@@ -27,8 +27,8 @@ Plug 'tpope/vim-repeat'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'christoomey/vim-tmux-navigator'
-
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'dhruvasagar/vim-table-mode'
 
 call plug#end()
 
@@ -71,7 +71,7 @@ set tabstop=4
 " i like my markdown wrapped
 "
 "
-autocmd Filetype markdown set tw=120
+" autocmd Filetype markdown set tw=120
 
 "
 " when indenting with '>', use 4 spaces width
@@ -120,6 +120,13 @@ set statusline=%F\ %{FugitiveStatusline()}%=%l:%c
 "
 "
 set noro
+
+"
+" show whitespace
+"
+"
+set list
+set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:+
 
 "
 " keymaps
