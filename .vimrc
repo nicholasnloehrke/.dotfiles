@@ -71,7 +71,7 @@ set tabstop=4
 " i like my markdown wrapped
 "
 "
-autocmd Filetype markdown set tw=80
+autocmd Filetype markdown set tw=120
 
 "
 " when indenting with '>', use 4 spaces width
