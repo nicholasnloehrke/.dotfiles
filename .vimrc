@@ -127,6 +127,12 @@ set shortmess+=F
 set noro
 
 "
+" spellcheck :)
+"
+"
+set spell
+
+"
 " show whitespace
 "
 "
