@@ -72,10 +72,10 @@ filetype plugin indent on
 set tabstop=4
 
 "
-" i like my markdown wrapped
+" use markdown style tables
 "
 "
-" autocmd Filetype markdown set tw=120
+let g:table_mode_corner='|'
 
 "
 " when indenting with '>', use 4 spaces width
@@ -156,3 +156,4 @@ let g:NERDTreeMouseMode=3
 
 " show me EVERYTHING
 let g:NERDTreeShowHidden=1
+
