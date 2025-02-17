@@ -118,6 +118,7 @@ set clipboard=unnamedplus
 
 set laststatus=2
 set statusline=%F\ %{FugitiveStatusline()}%=%l:%c
+set shortmess+=F
 
 "
 " default to not read-only for vimdiff
