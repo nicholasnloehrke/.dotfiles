@@ -127,10 +127,10 @@ set shortmess+=F
 set noro
 
 "
-" spellcheck :)
+" spellcheck
 "
 "
-set spell
+autocmd FileType markdown setlocal spell
 
 "
 " show whitespace
