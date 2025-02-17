@@ -164,3 +164,7 @@ let g:NERDTreeMouseMode=3
 " show me EVERYTHING
 let g:NERDTreeShowHidden=1
 
+" navigate soft wrapped lines a little nicer
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+
