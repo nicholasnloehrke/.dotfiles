@@ -137,6 +137,7 @@ if ! shopt -oq posix; then
     fi
 fi
 
+export FZF_DEFAULT_OPTS="--tmux"
 eval "$(fzf --bash)"
 
 if [[ "$XDG_CURRENT_DESKTOP" =~ [Gg][Nn][Oo][Mm][Ee] ]]; then
