@@ -29,6 +29,8 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
