@@ -154,7 +154,7 @@ set scrolloff=4
 " keymaps
 "
 "
-nmap <C-b> :NERDTreeToggle<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
 " join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
 vnoremap J <Nop>
@@ -183,3 +183,7 @@ nnoremap <expr> k v:count ? 'k' : 'gk'
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 
+" fzf
+nnoremap <C-p> :Buffers<CR>
+nnoremap <C-g> :Rg<CR>
+nnoremap <C-f> :Files<CR>
