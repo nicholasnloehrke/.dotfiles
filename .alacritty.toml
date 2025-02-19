@@ -17,7 +17,7 @@ hide_when_typing = true
 [window]
 position = { x = 320, y = 120 }
 dimensions = { columns = 210, lines = 46 }
-padding = { x = 5, y = 5 }
+padding = { x = 5, y = 0 }
 
 #
 #
