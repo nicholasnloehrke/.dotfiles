@@ -31,6 +31,7 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'farmergreg/vim-lastplace'
 
 call plug#end()
 
