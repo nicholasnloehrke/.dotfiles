@@ -149,7 +149,7 @@ set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:+
 " just a little scrolloff
 "
 "
-set scrolloff=4
+set scrolloff=10
 
 
 "
