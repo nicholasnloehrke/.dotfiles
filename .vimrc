@@ -150,6 +150,14 @@ set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:+
 "
 set scrolloff=4
 
+
+"
+" use // instead of /* */ for c and cpp comments
+"
+"
+autocmd FileType c,cpp setlocal commentstring=//\ %s
+
+
 "
 " keymaps
 "
