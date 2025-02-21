@@ -158,6 +158,12 @@ set scrolloff=10
 "
 autocmd FileType c,cpp setlocal commentstring=//\ %s
 
+"
+" use local vimrc's
+"
+"
+set exrc
+set secure
 
 "
 " keymaps
