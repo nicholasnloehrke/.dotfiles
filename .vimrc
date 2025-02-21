@@ -196,3 +196,13 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 nnoremap <C-b> :Buffers<CR>
 nnoremap <C-g> :Rg<CR>
 nnoremap <C-f> :Files<CR>
+
+" use C-q to toggle quickfix
+nnoremap <C-q> :call ToggleQuickfix()<CR>
+function! ToggleQuickfix()
+    if empty(filter(getwininfo(), 'v:val.quickfix'))
+        copen
+    else
+        cclose
+    endif
+endfunction
