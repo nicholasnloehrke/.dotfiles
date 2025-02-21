@@ -158,6 +158,14 @@ set scrolloff=10
 "
 autocmd FileType c,cpp setlocal commentstring=//\ %s
 
+
+"
+" dont add a f'ing comment on enter
+"
+"
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+
 "
 " use local vimrc's
 "
@@ -166,10 +174,18 @@ set exrc
 set secure
 
 "
+" open help in vertical split
+"
+"
+autocmd FileType help wincmd L
+
+
+"
 " keymaps
 "
 "
-nnoremap <C-p> :NERDTreeToggle<CR>
+nnoremap <C-p> :NERDTreeToggle %<CR>
+
 " join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
 vnoremap J <Nop>
