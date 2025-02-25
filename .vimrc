@@ -184,7 +184,7 @@ autocmd FileType help wincmd L
 " keymaps
 "
 "
-nnoremap <C-p> :NERDTreeToggle %<CR>
+nnoremap <C-b> :NERDTreeToggle %<CR>
 
 " join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
@@ -215,7 +215,7 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 
 " fzf
-nnoremap <C-b> :Buffers<CR>
+nnoremap <C-p> :Buffers<CR>
 nnoremap <C-g> :Rg<CR>
 nnoremap <C-f> :Files<CR>
 
