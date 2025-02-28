@@ -108,7 +108,7 @@ set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:+
 
 
 " Scrolloff
-set scrolloff=100
+set scrolloff=10
 
 
 " Use // instead of /* */ for c and cpp comments
