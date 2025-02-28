@@ -1,7 +1,4 @@
-"
-" install vim-plug
-"
-"
+" Install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
 	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -10,10 +7,7 @@ endif
 
 call plug#begin()
 
-"
-" plugins
-"
-"
+" Plugins
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-sensible'
@@ -35,22 +29,21 @@ Plug 'farmergreg/vim-lastplace'
 
 call plug#end()
 
+" LSP
 "
-" lsp
-"
-"
-" disable prompt to install language server
+" Disable prompt to install language server
 let g:lsp_settings_enable_suggestions=0
 
-" disable stupid annoying lsp popup
+" Disable stupid annoying lsp popup's
 let g:lsp_signature_help_enabled = 0
 let g:asyncomplete_auto_popup = 0
 let g:lsp_diagnostics_virtual_text_enabled = 0
 let g:lsp_diagnostics_enabled = 1
 
-" lsp highlighting
+" LSP highlighting
 highlight clear LspWarningHighlight
 
+" LSP tab autocomplete
 function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~ '\s'
@@ -62,49 +55,29 @@ inoremap <silent><expr> <TAB>
   \ asyncomplete#force_refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-"
-" not sure
-"
-"
+" Not sure what this does
 filetype plugin indent on
 
-"
-" show existing tab with 4 spaces width
-"
-"
+" Show existing tab with 4 spaces width
 set tabstop=4
 
-"
-" use markdown style tables
-"
-"
+" Use markdown style tables
 let g:table_mode_corner='|'
 
-"
-" when indenting with '>', use 4 spaces width
-"
-"
+" When indenting with '>', use 4 spaces width
 set shiftwidth=4
 
-"
-" on pressing tab, insert 4 spaces
-"
-"
+" On pressing tab, insert 4 spaces
 set expandtab
 
-"
-" hybrid line numbers
-"
-"
+" Hybrid line numbers
 set number
 set relativenumber
 
-"
-" please the eyes
-"
-"
+" Please the eyes
 set term=xterm-256color
 
+" Not sure what this does
 if !has('gui_running') && &term =~ '^\%(screen\|tmux\)'
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -113,104 +86,76 @@ endif
 set termguicolors
 colorscheme catppuccin_mocha
 
-"
-" mouse and copy 
-"
-"
+" Mouse and copy
 set mouse=a
 set virtualedit+=onemore
 set clipboard=unnamedplus
 
+" Statusline
 set laststatus=2
 set statusline=%F\ %{FugitiveStatusline()}%=%l:%c
 set shortmess+=F
 
-"
-" default to not read-only for vimdiff
-"
-"
+" Default to not read-only for vimdiff
 set noro
 
-"
-" spellcheck
-"
-"
+" Spellcheck markdown
 autocmd FileType markdown setlocal spell
 
-"
-" show whitespace
-"
-"
+" Show whitespace
 set list
 set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:+
 
 
-"
-" just a little scrolloff
-"
-"
-set scrolloff=10
+" Scrolloff
+set scrolloff=100
 
 
-"
-" use // instead of /* */ for c and cpp comments
-"
-"
+" Use // instead of /* */ for c and cpp comments
 autocmd FileType c,cpp setlocal commentstring=//\ %s
 
 
-"
-" dont add a f'ing comment on enter
-"
-"
+" Dont add a f'ing comment on enter
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 
-"
-" use local vimrc's
-"
-"
+" Use local vimrc's (NOT SECURE)
 set exrc
 set secure
 
-"
-" open help in vertical split
-"
-"
+" Open help in vertical split
 autocmd FileType help wincmd L
 
 
-"
-" keymaps
-"
-"
+" Toggle NERDTree
 nnoremap <C-b> :NERDTreeToggle<CR>
 
-" join lines is so f'ing annoying get rid of it
+" Join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
 vnoremap J <Nop>
+" Some LSP keymaps
 nnoremap gd :LspDefinition<CR>
 nnoremap gr :LspReferences<CR>
 nnoremap gn :LspRename<CR>
 nnoremap ge :LspDocumentDiagnostics<CR>
 nnoremap gh :LspHover<CR>
-" center searches
+" Center searches
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap <C-o> <C-o>zz
 nnoremap <C-i> <C-i>zz
 
-" open with one click :)
+" Open with one click
 let g:NERDTreeMouseMode=3
 
-" show me EVERYTHING
+" Show me EVERYTHING
 let g:NERDTreeShowHidden=1
 
-" navigate soft wrapped lines a little nicer
+" Navigate soft wrapped lines a little nicer
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
 
-" use C-j and C-k for completion menu
+" Use C-j and C-k for completion menu
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 
@@ -219,7 +164,8 @@ nnoremap <C-p> :Buffers<CR>
 nnoremap <C-g> :Rg<CR>
 nnoremap <C-f> :Files<CR>
 
-" use C-q to toggle quickfix
+" Use C-q to toggle quickfix
+" TODO: Figure out why the width changes when toggled in vertical splits
 nnoremap <C-q> :call ToggleQuickfix()<CR>
 function! ToggleQuickfix()
     if empty(filter(getwininfo(), 'v:val.quickfix'))
