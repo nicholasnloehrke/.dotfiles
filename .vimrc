@@ -128,7 +128,7 @@ autocmd FileType help wincmd L
 
 
 " Toggle NERDTree
-nnoremap <C-b> :NERDTreeToggle<CR>
+nnoremap <C-b> :NERDTreeRefreshRoot \| NERDTreeToggle<CR>
 
 " Join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
