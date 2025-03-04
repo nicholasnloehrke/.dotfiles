@@ -158,6 +158,7 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 nnoremap <C-p> :Buffers<CR>
 nnoremap <C-g> :Rg<CR>
 nnoremap <C-f> :Files<CR>
+let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 
 " Use C-q to toggle quickfix
 " TODO: Figure out why the width changes when toggled in vertical splits
