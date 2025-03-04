@@ -1,8 +1,8 @@
 " Install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
-	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin()
@@ -106,18 +106,14 @@ autocmd FileType markdown setlocal spell
 set list
 set listchars=tab:▸\ ,trail:·,extends:>,precedes:<,nbsp:+
 
-
 " Scrolloff
 set scrolloff=10
-
 
 " Use // instead of /* */ for c and cpp comments
 autocmd FileType c,cpp setlocal commentstring=//\ %s
 
-
 " Dont add a f'ing comment on enter
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
-
 
 " Use local vimrc's (NOT SECURE)
 set exrc
@@ -126,9 +122,8 @@ set secure
 " Open help in vertical split
 autocmd FileType help wincmd L
 
-
 " Toggle NERDTree
-nnoremap <C-b> :NERDTreeRefreshRoot \| NERDTreeToggle<CR>
+nnoremap <C-b> :NERDTreeRefreshRoot \| NERDTreeToggle<CR> \| <C-w>=
 
 " Join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
