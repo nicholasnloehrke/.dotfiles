@@ -123,7 +123,7 @@ set secure
 autocmd FileType help wincmd L
 
 " Toggle NERDTree
-nnoremap <C-b> :NERDTreeRefreshRoot \| NERDTreeToggle<CR> \| <C-w>=
+nnoremap <C-b> :NERDTreeToggle<CR> \| <C-w>=
 
 " Join lines is so f'ing annoying get rid of it
 nnoremap J <Nop>
