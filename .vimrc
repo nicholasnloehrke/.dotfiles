@@ -9,7 +9,8 @@ call plug#begin()
 
 " Plugins
 Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+" Plug 'mattn/vim-lsp-settings'
+Plug 'nicholasnloehrke/vim-lsp-settings', {'branch': 'robotframework-lsp'}
 Plug 'tpope/vim-sensible'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'editorconfig/editorconfig-vim'
