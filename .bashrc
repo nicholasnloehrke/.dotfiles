@@ -145,7 +145,8 @@ export FZF_DEFAULT_OPTS=" \
 --multi \
 --tmux"
 
-FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
+export FZF_ALT_C_COMMAND= 
+eval "$(fzf --bash)"
 
 if [[ "$XDG_CURRENT_DESKTOP" =~ [Gg][Nn][Oo][Mm][Ee] ]]; then
     gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 17
