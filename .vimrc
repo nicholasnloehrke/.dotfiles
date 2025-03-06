@@ -27,6 +27,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'farmergreg/vim-lastplace'
+Plug 'mbbill/undotree'
 
 call plug#end()
 
