@@ -1,14 +1,16 @@
 [user]
-	email = nicholasnloehrke@gmail.com
-	name = nicholasnloehrke
-[pull]
-	ff = only
-[http]
-	proxy = 
+    email = nicholasnloehrke@gmail.com
+    name = Nicholas Loehrke
 [color]
-	ui = true
+    ui = true
 [core]
-	editor = vim
-	pager = less -F
+    editor = vim
+    pager = less -F
 [diff]
-	tool = vimdiff
+    tool = vimdiff
+[difftool]
+    prompt = false
+[merge]
+    tool = vimdiff
+[mergetool]
+    prompt = false
