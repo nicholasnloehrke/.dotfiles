@@ -172,3 +172,7 @@ function! ToggleQuickfix()
         cclose
     endif
 endfunction
+
+" Turn diff on and off
+nnoremap <Leader>d :diffoff<CR>
+nnoremap <Leader>D :diffthis<CR>
