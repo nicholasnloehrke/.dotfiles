@@ -28,6 +28,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'farmergreg/vim-lastplace'
 Plug 'mbbill/undotree'
+Plug 'jhradilek/vim-docbk'
 
 call plug#end()
 
