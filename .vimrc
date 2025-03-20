@@ -93,6 +93,7 @@ colorscheme catppuccin_mocha
 set mouse=a
 set virtualedit+=onemore
 set clipboard=unnamedplus
+set ttymouse=xterm2
 
 " Statusline
 set laststatus=2
@@ -160,6 +161,7 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 " fzf
 nnoremap <C-p> :Buffers<CR>
 nnoremap <C-g> :Rg<CR>
+nnoremap <C-G> :BLines<CR>
 nnoremap <C-f> :Files<CR>
 let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 
