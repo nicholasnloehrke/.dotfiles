@@ -145,7 +145,7 @@ export FZF_DEFAULT_OPTS=" \
 --multi \
 --tmux"
 
-export FZF_ALT_C_COMMAND= 
+export FZF_ALT_C_COMMAND=
 eval "$(fzf --bash)"
 
 if [[ "$XDG_CURRENT_DESKTOP" =~ [Gg][Nn][Oo][Mm][Ee] ]]; then
@@ -153,6 +153,3 @@ if [[ "$XDG_CURRENT_DESKTOP" =~ [Gg][Nn][Oo][Mm][Ee] ]]; then
     gsettings set org.gnome.desktop.peripherals.keyboard delay 200
 fi
 
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#   tmux a -t default || exec tmux new -s default && exit;
-# fi
