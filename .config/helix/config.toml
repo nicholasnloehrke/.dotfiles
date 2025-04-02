@@ -30,7 +30,7 @@ auto-signature-help = false
 display-messages = true
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control", "file-name"]
+left = ["mode", "spinner", "file-name", "version-control"]
 
 [editor.inline-diagnostics]
 cursor-line = "error" # Show inline diagnostics when the cursor is on the line
