@@ -13,6 +13,8 @@ true-color = true
 end-of-line-diagnostics = "hint"
 # Yank and paste using clipboard
 default-yank-register = "+"
+# Don't add a comment when pressing enter
+continue-comments = false
 
 [editor.file-picker]
 # Show hidden files
