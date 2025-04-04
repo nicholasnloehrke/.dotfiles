@@ -60,8 +60,14 @@ esc = ["collapse_selection", "keep_primary_selection"]
 "C-h" = "jump_view_left"
 "C-l" = "jump_view_right"
 
+V = ["select_mode", "extend_to_line_bounds"]
+
 [keys.select]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
+k = ["extend_line_up", "extend_to_line_bounds"]
+j = ["extend_line_down", "extend_to_line_bounds"]
+"C-u" = ["page_cursor_half_up"]
+"C-d" = ["page_cursor_half_down"]
 
 [keys.insert]
 esc = ["collapse_selection", "normal_mode"]
