@@ -15,6 +15,8 @@ end-of-line-diagnostics = "hint"
 default-yank-register = "+"
 # Don't add a comment when pressing enter
 continue-comments = false
+# Don't auto insert {}, "", etc
+auto-pairs = false
 
 [editor.file-picker]
 # Show hidden files
@@ -39,7 +41,7 @@ display-messages = true
 left = ["mode", "spinner", "file-name", "version-control"]
 
 [editor.inline-diagnostics]
-cursor-line = "error" # Show inline diagnostics when the cursor is on the line
+cursor-line = "disable" # Don't show inline diagnostics when the cursor is on the line
 other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
 
 [keys.normal]
