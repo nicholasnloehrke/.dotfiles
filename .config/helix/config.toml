@@ -20,6 +20,13 @@ auto-pairs = false
 # Don't auto format on save
 auto-format = false
 
+[editor.whitespace.render]
+tab = "all"
+
+[editor.whitespace.characters]
+tab = "▸"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
 [editor.soft-wrap]
 enable = true
 max-wrap = 25 # increase value to reduce forced mid-word wrapping
