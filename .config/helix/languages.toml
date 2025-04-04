@@ -27,7 +27,6 @@ reportMissingTypeStubs = false
 
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "basic"
-autoImportCompletions = true
 
 [language-server.ruff]
 command = "ruff-lsp"
