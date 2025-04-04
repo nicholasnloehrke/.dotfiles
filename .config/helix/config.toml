@@ -17,6 +17,8 @@ default-yank-register = "+"
 continue-comments = false
 # Don't auto insert {}, "", etc
 auto-pairs = false
+# Don't auto format on save
+auto-format = false
 
 [editor.soft-wrap]
 enable = true
