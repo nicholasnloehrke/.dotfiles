@@ -19,6 +19,9 @@ position = { x = 320, y = 120 }
 dimensions = { columns = 210, lines = 46 }
 padding = { x = 5, y = 0 }
 
+[cursor]
+style = { blinking = "Always" }
+
 #
 #
 # The following is for setting up Catppuccin color scheme
