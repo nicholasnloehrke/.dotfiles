@@ -29,3 +29,17 @@ command = "ruff-lsp"
 
 [language-server.ruff.config]
 settings = {args = []}
+
+
+[[language]]
+name = "robot"
+scope = "source.robot"
+injection-regex = "robot"
+file-types = ["robot", "resource"]
+comment-token = "#"
+indent = { tab-width = 4, unit = " " }
+language-servers = [ "robotcode" ]
+
+[language-server.robotcode]
+command = "robotcode"
+args = ["language-server"]
