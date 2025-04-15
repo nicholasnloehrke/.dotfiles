@@ -53,7 +53,7 @@ auto-signature-help = false
 display-messages = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name", "version-control"]
+left = ["mode", "spinner", "file-name", "version-control", "read-only-indicator", "file-modification-indicator"]
 right = ["file-type", "diagnostics", "selections", "register", "position", "file-encoding"]
 
 [editor.inline-diagnostics]
