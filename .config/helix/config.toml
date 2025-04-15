@@ -54,6 +54,7 @@ display-messages = true
 
 [editor.statusline]
 left = ["mode", "spinner", "file-name", "version-control"]
+right = ["file-type", "diagnostics", "selections", "register", "position", "file-encoding"]
 
 [editor.inline-diagnostics]
 cursor-line = "disable" # Don't show inline diagnostics when the cursor is on the line
