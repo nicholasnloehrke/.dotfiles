@@ -12,7 +12,7 @@ auto-format = true
 
 [language.formatter]
 command = "sh"
-args = ["-c", "ruff check --select I --fix - | ruff format -"]
+args = ["-c", "ruff check --fix - | ruff format -"]
 
 [language-server.pyright]
 command = "pyright-langserver"
@@ -25,7 +25,8 @@ reportMissingTypeStubs = false
 typeCheckingMode = "basic"
 
 [language-server.ruff]
-command = "ruff-lsp"
+# command = "ruff-lsp"
+command = "ruff server"
 
 [language-server.ruff.config]
 settings = {args = []}
