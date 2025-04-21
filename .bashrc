@@ -143,7 +143,8 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
 --multi \
---tmux center,80%"
+--tmux center,80% \
+--layout reverse"
 
 export FZF_ALT_C_COMMAND=
 eval "$(fzf --bash)"
