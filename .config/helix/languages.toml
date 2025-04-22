@@ -58,4 +58,4 @@ block-comment-tokens = { start = "<!--", end = "-->" }
 
 [language.formatter]
 command = "bash"
-args = ["-c", "pandoc -f markdown -t gfm"]
+args = ["-c", "pandoc -f gfm -t gfm"]
