@@ -148,6 +148,12 @@ export FZF_DEFAULT_OPTS=" \
 
 export FZF_ALT_C_COMMAND=
 
+
+BLK="03" CHR="03" DIR="04" EXE="02" REG="07" HARDLINK="05" SYMLINK="05" MISSING="08" ORPHAN="01" FIFO="06" SOCK="03" UNKNOWN="01"
+export NNN_COLORS="#04020301;4231"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$UNKNOWN"
+
+
 if [[ "$XDG_CURRENT_DESKTOP" =~ [Gg][Nn][Oo][Mm][Ee] ]]; then
     gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 17
     gsettings set org.gnome.desktop.peripherals.keyboard delay 200
