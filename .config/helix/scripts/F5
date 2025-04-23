@@ -4,14 +4,6 @@
 
 tmux split-window -v -l 10 -d "bash -c '
   $HELIX_F5_CMD
-  code=\$?
-  echo
-  echo Exit code: \$code
-  echo
-
-  if [[ \$HELIX_F5_CMD_CLOSE_ON_SUCCESS -eq 1 && \$code -eq 0 ]]; then
-    exit
-  fi
-
+  printf \"\nexit code: %d\n\n\" $?
   read -n 1 -s -p \"[press any key to close]\"
 '"
