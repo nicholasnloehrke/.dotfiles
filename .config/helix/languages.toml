@@ -65,3 +65,7 @@ command = "ltex-ls"
 
 [language-server.ltex-ls-plus]
 command = "ltex-ls-plus"
+
+[[language]]
+name = "xml"
+language-servers = ["ltex-ls-plus"]
