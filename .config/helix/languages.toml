@@ -25,7 +25,6 @@ reportMissingTypeStubs = false
 typeCheckingMode = "basic"
 
 [language-server.ruff]
-# command = "ruff-lsp"
 command = "ruff server"
 
 [language-server.ruff.config]
