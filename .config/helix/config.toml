@@ -76,7 +76,6 @@ F5 = ":run-shell-command ~/.config/helix/scripts/F5"
 i = ":toggle-option file-picker.git-exclude"
 
 [keys.select]
-esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
 k = ["extend_line_up", "extend_to_line_bounds"]
 j = ["extend_line_down", "extend_to_line_bounds"]
 J = "no_op"
