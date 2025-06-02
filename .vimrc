@@ -159,10 +159,10 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
 
 " fzf
-nnoremap <C-p> :Buffers<CR>
-nnoremap <C-g> :Rg<CR>
-nnoremap <C-q> :BLines<CR>
-nnoremap <C-f> :Files<CR>
+nnoremap <Space>b :Buffers<CR>
+nnoremap <Space>/ :Rg<CR>
+nnoremap <Space>? :BLines<CR>
+nnoremap <Space>f :Files<CR>
 let g:fzf_layout = { 'window': { 'width': 1, 'height': 1 } }
 
 " Turn diff on and off
