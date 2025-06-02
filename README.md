@@ -6,6 +6,7 @@
 | nnn   | https://github.com/jarun/nnn/releases                              |
 | tmux  | https://github.com/tmux/tmux/releases                              |
 | tpm   | git clone https://github.com/tmux-plugins/tpm \~/.tmux/plugins/tpm |
+| tig   | https://github.com/jonas/tig/releases                              |
 
 # Install
 
