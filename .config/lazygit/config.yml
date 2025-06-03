@@ -4,3 +4,4 @@ git:
   truncateCopiedCommitHashesTo: 40 # dont truncate
 gui:
   nerdFontsVersion: 3
+  border: single
