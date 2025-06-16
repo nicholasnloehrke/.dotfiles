@@ -87,10 +87,6 @@ export GIT_PS1_DESCRIBE_STYLE='default' # options: contains | branch | describe 
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUPSTREAM='auto'
 
-# Combine virtual environment and Git prompt in PROMPT_COMMAND
-# PROMPT_COMMAND='set_venv_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n\[\033[33m\]→  \[\033[0m\]"'
-# PROMPT_COMMAND='set_venv_prompt; set_job_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w${JOBPROMPT}" "\n${COLOR_YELLOW}→  ${COLOR_RESET}"'
-# PROMPT_COMMAND='set_venv_prompt; set_job_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "\n${COLOR_YELLOW}→  ${COLOR_RESET}${JOBPROMPT}"'
 PROMPT_COMMAND='set_venv_prompt; set_job_prompt; __git_ps1 "${VENVPROMPT}\u@\h:\w" "${JOBPROMPT}\n${COLOR_YELLOW}→  ${COLOR_RESET}"'
 
 # enable color support of ls and also add handy aliases
