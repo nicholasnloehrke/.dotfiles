@@ -96,6 +96,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
     alias ls='ls --color=auto'
+    alias diff='diff --color'
 fi
 
 n ()
@@ -169,3 +170,19 @@ if [[ "$XDG_CURRENT_DESKTOP" =~ [Gg][Nn][Oo][Mm][Ee] ]]; then
     gsettings set org.gnome.desktop.peripherals.keyboard delay 200
 fi
 
+if command -v lazygit >/dev/null 2>&1; then
+    alias lg=lazygit
+fi
+
+if command -v hx >/dev/null 2>&1; then
+    export EDITOR=hx
+    export VISUAL=hx
+fi
+
+if command -v fzf >/dev/null 2>&1; then
+    eval "$(fzf --bash)"
+fi
+
+if command -v jj >/dev/null 2>&1; then
+    source <(COMPLETE=bash jj)
+fi
