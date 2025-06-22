@@ -159,6 +159,11 @@ export FZF_DEFAULT_OPTS=" \
 
 export FZF_ALT_C_COMMAND=
 
+if command -v fzf >/dev/null 2>&1; then
+    eval "$(fzf --bash)"
+fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 BLK="03" CHR="03" DIR="04" EXE="02" REG="07" HARDLINK="05" SYMLINK="05" MISSING="08" ORPHAN="01" FIFO="06" SOCK="03" UNKNOWN="01"
 export NNN_COLORS="#04020301;4231"
@@ -179,9 +184,6 @@ if command -v hx >/dev/null 2>&1; then
     export VISUAL=hx
 fi
 
-if command -v fzf >/dev/null 2>&1; then
-    eval "$(fzf --bash)"
-fi
 
 if command -v jj >/dev/null 2>&1; then
     source <(COMPLETE=bash jj)
