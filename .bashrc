@@ -154,7 +154,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475a \
 --color=border:#313244,label:#cdd6f4 \
 --multi \
---tmux center,80% \
+--tmux center,100% \
 --layout reverse"
 
 export FZF_ALT_C_COMMAND=
