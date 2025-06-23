@@ -1,41 +1,30 @@
 theme = "catppuccin_mocha"
 
 [editor]
-# Show currently open buffers, only when more than one exists.
 bufferline = "never"
-# Highlight all lines with a cursor
 cursorline = true
-# Use relative line numbers
 line-number = "relative"
-# Force the theme to show colors
 true-color = true
-# Minimum severity to show a diagnostic after the end of a line
 end-of-line-diagnostics = "hint"
-# Yank and paste using clipboard
 default-yank-register = "+"
-# Don't add a comment when pressing enter
 continue-comments = false
-# Don't auto insert {}, "", etc
 auto-pairs = false
-# Don't auto format on save
 auto-format = false
 
 [editor.whitespace.render]
 tab = "all"
-space = "all"
 
 [editor.whitespace.characters]
 tab = "▸"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "·"
 
 [editor.soft-wrap]
 enable = true
-max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-wrap = 25
 max-indent-retain = 0
-wrap-indicator = ""  # set wrap-indicator to "" to hide it
+wrap-indicator = ""
 
 [editor.file-picker]
-# Show hidden files
 hidden = false
 
 [editor.cursor-shape]
@@ -48,9 +37,7 @@ character = "╎"
 render = true
 
 [editor.lsp]
-# Disable automatically popups of signature parameter help
 auto-signature-help = false
-# Show LSP messages in the status line
 display-messages = true
 
 [editor.statusline]
@@ -58,8 +45,8 @@ left = ["mode", "spinner", "file-name", "version-control", "read-only-indicator"
 right = ["file-type", "diagnostics", "selections", "register", "position", "file-encoding"]
 
 [editor.inline-diagnostics]
-cursor-line = "disable" # Don't show inline diagnostics when the cursor is on the line
-other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
+cursor-line = "disable"
+other-lines = "disable"
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
