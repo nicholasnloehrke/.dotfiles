@@ -188,3 +188,4 @@ bar {
 
 exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id xset r rate 200 40 # keyboard delay repeat
+include ~/.config/i3/config.local
