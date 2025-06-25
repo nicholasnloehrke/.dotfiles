@@ -157,7 +157,7 @@ export FZF_DEFAULT_OPTS=" \
 --tmux center,100% \
 --layout reverse"
 
-# export FZF_ALT_C_COMMAND=
+export FZF_ALT_C_COMMAND=
 
 if command -v fzf >/dev/null 2>&1; then
     eval "$(fzf --bash)"
