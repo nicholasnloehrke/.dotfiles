@@ -184,7 +184,10 @@ if command -v hx >/dev/null 2>&1; then
     export VISUAL=hx
 fi
 
-
 if command -v jj >/dev/null 2>&1; then
     source <(COMPLETE=bash jj)
+fi
+
+if command -v direnv >/dev/null 2>&1; then
+    eval "$(direnv hook bash)"
 fi
