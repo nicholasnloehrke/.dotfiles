@@ -148,14 +148,14 @@ if ! shopt -oq posix; then
 fi
 
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
---color=selected-bg:#45475a \
---color=border:#313244,label:#cdd6f4 \
+--color=bg+:#2d333b,bg:#22272e,spinner:#6cb6ff,hl:#ff938a \
+--color=fg:#adbac7,header:#ff938a,info:#b083f0,pointer:#6cb6ff \
+--color=marker:#539bf5,fg+:#adbac7,prompt:#b083f0,hl+:#ff938a \
+--color=selected-bg:#2d333b \
+--color=border:#2d333b,label:#adbac7 \
 --multi \
 --tmux center,100% \
---layout reverse"
+--layout=reverse"
 
 export FZF_ALT_C_COMMAND=
 
