@@ -1,8 +1,8 @@
 git:
   commit:
     signOff: true
-  overrideGpg: true
   truncateCopiedCommitHashesTo: 40 # dont truncate
+  autoForwardBranches: none
 gui:
   nerdFontsVersion: 3
   border: single
