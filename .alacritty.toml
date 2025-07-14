@@ -35,3 +35,13 @@ blue    = '#51afef'
 magenta = '#c678dd'
 cyan    = '#46d9ff'
 white   = '#bbc2cf'
+
+[colors.bright]
+black   = '#53565c'
+red     = '#ff8988'
+green   = '#accb83'
+yellow  = '#efcb95'
+blue    = '#73bff2'
+magenta = '#d193e3'
+cyan    = '#6be0ff'
+white   = '#c8ced8'
