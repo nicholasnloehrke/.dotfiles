@@ -148,8 +148,8 @@ if ! shopt -oq posix; then
 fi
 
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#2d333b,bg:#22272e,spinner:#6cb6ff,hl:#ff938a \
---color=fg:#adbac7,header:#ff938a,info:#b083f0,pointer:#6cb6ff \
+--color=bg+:#2d333b,bg:#282c34,spinner:#6cb6ff,hl:#ff938a \
+--color=fg:#bbc2cf,header:#ff938a,info:#b083f0,pointer:#6cb6ff \
 --color=marker:#539bf5,fg+:#adbac7,prompt:#b083f0,hl+:#ff938a \
 --color=selected-bg:#2d333b \
 --color=border:#2d333b,label:#adbac7 \
