@@ -2,7 +2,7 @@ theme = "doom-one"
 
 [editor]
 bufferline = "never"
-cursorline = true
+cursorline = false
 line-number = "relative"
 true-color = true
 end-of-line-diagnostics = "hint"
