@@ -10,6 +10,7 @@ default-yank-register = "+"
 continue-comments = false
 auto-pairs = false
 auto-format = false
+popup-border = "all"
 
 [editor.whitespace.render]
 tab = "all"
