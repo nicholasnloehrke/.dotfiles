@@ -48,7 +48,8 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # start chrome
-bindsym $mod+g exec google-chrome
+bindsym $mod+g exec google-chrome --password-store=gnome
+bindsym $mod+Shift+g exec google-chrome --password-store=gnome --incognito
 
 # kill focused window
 bindsym $mod+Shift+q kill
