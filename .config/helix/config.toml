@@ -8,9 +8,10 @@ true-color = true
 end-of-line-diagnostics = "hint"
 default-yank-register = "+"
 continue-comments = false
-auto-pairs = false
+auto-pairs = true
 auto-format = false
 popup-border = "all"
+smart-tab.enable = true
 
 [editor.whitespace.render]
 tab = "all"
