@@ -60,3 +60,15 @@ name = "markdown"
 name = "markdown"
 command = "bash"
 args = ["-c", "pandoc -t gfm --wrap=auto --columns=100"]
+
+
+[[language]]
+name = "scheme"
+language-servers = ["scheme-language-server"]
+
+[language-server.scheme-language-server]
+command = "steel-language-server"
+
+[language.formatter]
+name = "scheme"
+command = "schemat"
