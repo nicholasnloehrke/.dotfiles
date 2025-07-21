@@ -51,6 +51,9 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+g exec google-chrome --password-store=gnome
 bindsym $mod+Shift+g exec google-chrome --password-store=gnome --incognito
 
+# screenshot
+bindsym Print exec --no-startup-id flameshot gui -r -p ~/Pictures/Screenshots/ | xclip -selection clipboard -t image/png
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
