@@ -5,7 +5,7 @@ for player in $(playerctl -l 2>/dev/null); do
     if [[ "$status" == "Playing" ]]; then
         title=$(playerctl -p "$player" metadata title 2>/dev/null)
         artist=$(playerctl -p "$player" metadata artist 2>/dev/null)
-        echo "$artist - $title"
+        echo "♫ $title - $artist"
         exit 0
     fi
 done
