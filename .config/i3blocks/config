@@ -1,9 +1,9 @@
 [player]
 command=~/.config/i3blocks/scripts/player
-interval=2
+interval=1
 color=#51afef
 
 [time]
 command=date
-interval=5
+interval=1
 color=#51afef
