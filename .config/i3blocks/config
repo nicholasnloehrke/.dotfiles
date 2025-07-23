@@ -1,0 +1,11 @@
+[title]
+command=playerctl metadata title
+interval=2
+
+[artist]
+command=playerctl metadata artist
+interval=2
+
+[time]
+command=date +%T
+interval=5
