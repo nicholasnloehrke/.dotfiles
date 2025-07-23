@@ -1,9 +1,5 @@
-[title]
-command=playerctl metadata title
-interval=2
-
-[artist]
-command=playerctl metadata artist
+[player]
+command=~/.config/i3blocks/scripts/player
 interval=2
 
 [time]
