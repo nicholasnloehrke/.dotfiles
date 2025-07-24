@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-tmux display-popup -d '#{pane_current_path}' -EE -b rounded -S fg="#6c7086" -w 100% -h 99% "$@"
