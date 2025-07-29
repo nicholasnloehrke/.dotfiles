@@ -108,7 +108,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # center window
-bindsym $mod+y floating toggle, resize set 1800 px 1300 px, move position center
+bindsym $mod+y floating toggle, resize set 1800 px 1420 px, move position center
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
