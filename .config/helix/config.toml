@@ -1,4 +1,4 @@
-theme = "my-doom-one"
+theme = "doom-one"
 
 [editor]
 bufferline = "never"
